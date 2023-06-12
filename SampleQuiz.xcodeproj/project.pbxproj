@@ -13,6 +13,11 @@
 		7F7A664A2A32EE070032E8DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7A66482A32EE070032E8DD /* Main.storyboard */; };
 		7F7A664C2A32EE080032E8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7A664B2A32EE080032E8DD /* Assets.xcassets */; };
 		7F7A664F2A32EE080032E8DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7A664D2A32EE080032E8DD /* LaunchScreen.storyboard */; };
+		7F7A66572A32F2240032E8DD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A66562A32F2240032E8DD /* QuizViewController.swift */; };
+		7F7A66592A32F37A0032E8DD /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A66582A32F37A0032E8DD /* ScoreViewController.swift */; };
+		7F7A665B2A32F7340032E8DD /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7F7A665A2A32F7340032E8DD /* quiz.csv */; };
+		7F7A66632A330CE10032E8DD /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F7A66612A330CE10032E8DD /* correct.png */; };
+		7F7A66642A330CE10032E8DD /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F7A66622A330CE10032E8DD /* incorrect.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		7F7A664B2A32EE080032E8DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F7A664E2A32EE080032E8DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F7A66502A32EE080032E8DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F7A66562A32F2240032E8DD /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		7F7A66582A32F37A0032E8DD /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		7F7A665A2A32F7340032E8DD /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
+		7F7A66612A330CE10032E8DD /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		7F7A66622A330CE10032E8DD /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,26 @@
 			children = (
 				7F7A66422A32EE070032E8DD /* AppDelegate.swift */,
 				7F7A66442A32EE070032E8DD /* SceneDelegate.swift */,
+				7F7A665A2A32F7340032E8DD /* quiz.csv */,
 				7F7A66462A32EE070032E8DD /* ViewController.swift */,
+				7F7A66562A32F2240032E8DD /* QuizViewController.swift */,
+				7F7A66582A32F37A0032E8DD /* ScoreViewController.swift */,
 				7F7A66482A32EE070032E8DD /* Main.storyboard */,
+				7F7A66602A330CE10032E8DD /* image */,
 				7F7A664B2A32EE080032E8DD /* Assets.xcassets */,
 				7F7A664D2A32EE080032E8DD /* LaunchScreen.storyboard */,
 				7F7A66502A32EE080032E8DD /* Info.plist */,
 			);
 			path = SampleQuiz;
+			sourceTree = "<group>";
+		};
+		7F7A66602A330CE10032E8DD /* image */ = {
+			isa = PBXGroup;
+			children = (
+				7F7A66612A330CE10032E8DD /* correct.png */,
+				7F7A66622A330CE10032E8DD /* incorrect.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +148,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7A66632A330CE10032E8DD /* correct.png in Resources */,
+				7F7A66642A330CE10032E8DD /* incorrect.png in Resources */,
 				7F7A664F2A32EE080032E8DD /* LaunchScreen.storyboard in Resources */,
 				7F7A664C2A32EE080032E8DD /* Assets.xcassets in Resources */,
 				7F7A664A2A32EE070032E8DD /* Main.storyboard in Resources */,
+				7F7A665B2A32F7340032E8DD /* quiz.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +166,9 @@
 			files = (
 				7F7A66472A32EE070032E8DD /* ViewController.swift in Sources */,
 				7F7A66432A32EE070032E8DD /* AppDelegate.swift in Sources */,
+				7F7A66592A32F37A0032E8DD /* ScoreViewController.swift in Sources */,
 				7F7A66452A32EE070032E8DD /* SceneDelegate.swift in Sources */,
+				7F7A66572A32F2240032E8DD /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
